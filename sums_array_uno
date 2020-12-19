@@ -1,0 +1,11 @@
+def suma_array(array, suma):
+    for index in range(len(array)):
+        cont = index + 1
+        while cont < 4:
+            if array[index] + array[cont] == suma:
+                return index, cont
+            else:
+                cont += 1
+
+
+print(suma_array([0, 2, 3, 4], 2))
